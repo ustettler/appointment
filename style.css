@@ -147,3 +147,9 @@ button:active {
 	align-items: center;
 	text-align: center;
 }
+
+.active {
+	padding: 2px;
+	background: #1abc9c;
+	color: white !important;
+}
