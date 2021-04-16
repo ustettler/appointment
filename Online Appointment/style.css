@@ -1,0 +1,155 @@
+/* === Small CSS Reset === */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	color: white;
+	padding-bottom: 3rem;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+body {
+	font-family: Verdana, sans-serif;
+}
+
+/* Month header */
+.month {
+	padding: 70px 25px;
+	width: 100%;
+	background: #1abc9c;
+	text-align: center;
+}
+
+/* Month list */
+.month ul {
+	margin: 0;
+	padding: 0;
+}
+
+.month ul li {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+	float: left;
+	padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+	float: right;
+	padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+	margin: 0;
+	padding: 10px 0;
+	background-color: #ddd;
+}
+
+.weekdays li {
+	display: inline-block;
+	width: 13.6%;
+	color: #666;
+	text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+	padding: 10px 0;
+	background: #eee;
+	margin: 0;
+	cursor: pointer;
+}
+
+.days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 13.6%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+	padding: 5px;
+	background: #1abc9c;
+	color: white !important;
+}
+
+/* Date */
+
+.newDate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+input {
+	font-size: 1rem;
+	margin-right: 1rem;
+}
+
+select {
+	font-size: 1rem;
+	margin-right: 1rem;
+}
+
+button {
+	padding: 0.5rem;
+	background-color: #666;
+	font-size: clamp(.7rem, 1vw, 1rem);
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	border: 2px solid black;
+	background-color: transparent;
+	cursor: pointer;
+	box-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+button:active {
+	background-color: greenyellow;
+	color: black;
+	box-shadow: none;
+}
+
+#currentDate {
+	margin-right: 1rem;
+	font-size: 1rem;
+}
+
+.dates {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.active {
+	padding: 2px;
+	background: #1abc9c;
+	color: white !important;
+}
